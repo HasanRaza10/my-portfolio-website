@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <title>Hasan Raza | Full Stack Developer</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER / ABOUT ME SECTION -->
+        <header>
+            <h1>Hasan Raza</h1>
+            <p class="tagline">Full Stack Developer & Machine Learning Enthusiast</p>
+            <p class="summary">
+                Computer Science and Design undergraduate skilled in web development, machine learning, and cloud computing. Experienced in building scalable web applications and intelligent systems.
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/HasanRaza10" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/hasan-raza-b35752262" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:hasanraza6361@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </header>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Python, Java, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Web</h3>
+                    <p>Flask, REST APIs, Firebase, MySQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <p>Basic AWS, Firebase Hosting, Git</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Diabetes Prediction (ML)</h3>
+                    <p>Scikit-learn model deployed to predict diabetes from medical data. A key project showcasing my ML skills.</p>
+                    <a href="https://github.com/HasanRaza10" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Rock vs mine Prediction (ML)</h3>
+                    <p>A machine learning project that classifies sonar signals as either rock or mine using supervised learning algorithms. </p>
+                    <a href="https://github.com/HasanRaza10" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Resume Shortlisting System</h3>
+                    <p>AI-powered web tool to automate candidate screening using NLP techniques and streamline the hiring process.</p>
+                    <a href="https://github.com/HasanRaza10" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Habit Tracker Web App</h3>
+                    <p>Built a full-stack habit tracking tool with user authentication and progress visualization using Flask and SQLite.</p>
+                    <a href="https://github.com/HasanRaza10" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="experience-card">
+                <h3>Web Development Intern</h3>
+                <p class="company-name">InternPe | July 2024</p>
+                <ul>
+                    <li>Developed mini web apps with responsive UIs using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with a team to deliver front-end components enhancing user experience.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-card">
+                <h3>Bachelor in Engineering, Computer Science and Design</h3>
+                <p class="institution">PES Institute of Technology and Management (VTU)</p>
+                <p class="duration">2022 – 2026</p>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <div class="cert-list">
+                <ul>
+                    <li>Cloud Computing - NPTEL</li>
+                    <li>Cloud Management - Udemy</li>
+                    <li>Enterprise App Development with JAVA EE - PESITM</li>
+                    <li>Building Intelligent Systems - PESITM</li>
+                    <li>Competitive Programming Bootcamp - PESITM</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>Made with <i class="fas fa-laptop-code"></i> and <i class="fas fa-heart"></i> by Hasan Raza &copy; 2025</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

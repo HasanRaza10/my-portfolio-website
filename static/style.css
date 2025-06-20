@@ -1,0 +1,232 @@
+/* --- Global Styles & Dark Theme --- */
+:root {
+    --bg-color: #0d1117; /* GitHub dark background */
+    --primary-text: #c9d1d9; /* Light grey text */
+    --secondary-text: #8b949e; /* Dimmer grey text */
+    --border-color: #30363d;
+    --card-bg: #161b22; /* Card background */
+    --accent-color: #58a6ff; /* A nice blue for links and highlights */
+    --hover-color: #1f6feb;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px 20px 50px 20px; /* Added more padding at the bottom */
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+h2 i {
+    margin-right: 12px;
+}
+
+/* --- Header Section --- */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    margin: 10px 0;
+}
+
+.summary {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+
+.contact-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1.1rem;
+}
+
+.contact-links i {
+    margin-right: 8px;
+}
+
+/* --- Reusable Card Styles --- */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.skill-category p {
+    margin: 0;
+    color: var(--secondary-text);
+}
+
+/* --- Projects Section --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: var(--secondary-text);
+    flex-grow: 1; /* Pushes the link to the bottom */
+}
+
+.project-link {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* --- Experience & Education Section --- */
+.experience-card, .education-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.company-name, .institution {
+    font-weight: 600;
+    color: var(--secondary-text);
+    margin-bottom: 5px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    margin: 15px 0 0 0;
+    color: var(--secondary-text);
+}
+
+.duration {
+    color: var(--secondary-text);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* --- Certifications Section --- */
+.cert-list {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.cert-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: var(--secondary-text);
+    columns: 2; /* Creates two columns for the list */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.cert-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cert-list li::before {
+    content: '\f0a4'; /* Font Awesome certificate/hand-pointer icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-right: 12px;
+}
+
+/* --- Footer Section --- */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-text);
+}
+
+footer i {
+    color: var(--accent-color);
+}
